@@ -16,6 +16,17 @@ It is important to note that SKU is expected to contain at least one letter.
 
 API provides methods to create, get, edit and delete products. All methods, if not stated otherwise, accept and return JSON data.
 
+
+## Installation
+
+In order to run the server (inside a Docker container) one has to clone this repository and use `docker-compose` to build the image and execute the container, using following commands:
+```bash
+git clone https://github.com/geomPhantom/Products_System_Flask.git
+cd Products_System_Flask
+docker-compose up
+```
+
+
 ## API details
 
 ### 1. Create product
@@ -159,13 +170,4 @@ Example of list returned:
       "type_id": 2
    }
 ]
-```
-
-## Testing
-
-In order to run the server (inside a Docker container) one has to clone this repository and use `docker-compose` to build the image and execute the container, using following commands:
-```bash
-git clone https://github.com/geomPhantom/Products_System_Flask.git
-cd Products_System_Flask
-docker-compose up
 ```
