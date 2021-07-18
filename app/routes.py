@@ -3,7 +3,7 @@ from models import Product, serialize
 from flask import jsonify, request, make_response
 from sqlalchemy import exc
 
-PRODUCTS_PER_PAGE = 2
+PRODUCTS_PER_PAGE = 10
 
 
 @app.route('/products', methods=['POST'])
