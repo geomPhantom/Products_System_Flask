@@ -9,4 +9,3 @@ services:
       - db-data:/usr/src/app/db
 volumes:
   db-data:
-    external: true
