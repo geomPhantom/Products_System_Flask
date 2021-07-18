@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    image: products_system_flask:0.1
+    build: ./app
+    ports:
+      - "5000:5000"
+    volumes:
+      - db-data:/usr/src/app/db
+volumes:
+  db-data:
+    external: true
